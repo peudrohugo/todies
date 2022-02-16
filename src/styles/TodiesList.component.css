@@ -1,12 +1,42 @@
 .todies {
   display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  flex-wrap: wrap;
+  width: 47.5%;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--red);
+}
+
+.todies__heading {
+  font-size: 30px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.done {
+  background-color: var(--green);
+}
+
+@media (max-width: 1100px) {
+  .todies {
+      width: 45%;
+  }
 }
 
 @media (max-width: 700px) {
     .todies {
         width: 95%;
+        margin-bottom: 10px;
+    }
+    .container {
+      width: 95%;
+      flex-direction: column;
     }
 }
