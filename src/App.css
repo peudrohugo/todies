@@ -3,7 +3,10 @@
 :root {
   --blue: #2f74c0;
   --brighter-blue: #388ae2;
+  --shiny-blue: rgb(50, 195, 205);
   --cream: #FCFBE3;
+  --red: rgb(235, 103, 80);
+  --green: #35BE92;
 }
 
 .App {
