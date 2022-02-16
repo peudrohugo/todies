@@ -43,10 +43,10 @@ const TodyCard: React.FC<CardProps> = ({ index, tody, todies, setTodies }) => {
 
   return (
     <Draggable draggableId={tody.id.toString()} index={index}>
-      {(provided) => (
+      {(provided, snapshot) => (
         <form
           ref={provided.innerRef}
-          className="todies__single"
+          className={`todies__single ${snapshot.isDragging ? "dragging" : ""}`}
           onSubmit={(event) => handleEdit(event, tody.id)}
           { ...provided.draggableProps }
           { ...provided.dragHandleProps }
