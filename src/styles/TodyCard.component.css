@@ -1,10 +1,15 @@
 .todies__single {
   display: flex;
-  width: 29.5%;
   border-radius: 5px;
   padding: 20px;
   margin-top: 15px;
   background-color: var(--cream);
+  transition: 0.2s;
+}
+
+.todies__single:hover {
+  box-shadow: 0 0 5px black;
+  transform: scale(1.03);
 }
 
 .todies__single--text {
@@ -22,16 +27,4 @@
   margin-left: 10px;
   font-size: 25px;
   cursor: pointer;
-}
-
-@media (max-width: 1200px) {
-  .todies__single {
-    width: 40%;
-  }
-}
-
-@media (max-width: 700px) {
-  .todies__single {
-    width: 100%;
-  }
 }
